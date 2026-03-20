@@ -1,0 +1,4 @@
+<div class="mt-4 flex items-center gap-2">
+    <span class="text-gray-400 text-sm font-mono uppercase tracking-tighter">System Status:</span>
+    <img src="https://github.com/[YOUR_USERNAME]/[YOUR_REPO]/actions/workflows/[FILE].yml/badge.svg" alt="Build Status">
+</div>
