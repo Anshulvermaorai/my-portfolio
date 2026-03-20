@@ -10,6 +10,7 @@
     <style>
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); }
         .border-gradient { border-image: linear-gradient(to right, #3b82f6, #8b5cf6) 1; }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-[#0f172a] text-slate-300 font-sans selection:bg-blue-500/30">
@@ -18,6 +19,7 @@
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <span class="text-xl font-mono font-bold text-white"><span class="text-blue-500">&lt;</span>Anshul Verma <span class="text-blue-500">/&gt;</span></span>
             <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
                 <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
                 <a href="#projects" class="hover:text-blue-400 transition">System Design</a>
                 <a href="#ngo" class="hover:text-blue-400 transition">Social Impact</a>
@@ -25,7 +27,7 @@
         </div>
     </nav>
 
-    <header class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
+    <header class="pt-32 pb-10 px-6 max-w-6xl mx-auto">
         <div class="inline-block px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-bold mb-6 uppercase tracking-widest">
             Backend Engineer • 4+ Years Exp
         </div>
@@ -36,30 +38,62 @@
             Specializing in **Java ecosystem** and high-performance integrations. From designing **RESTful APIs** at IBM to architecting **automated PLM syncs** at Agilent Technologies.
         </p>
         <div class="flex flex-wrap gap-4">
-            <a href="mailto:your-email@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-bold transition flex items-center gap-2">
+            <a href="mailto:officeanshulverma@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-bold transition flex items-center gap-2">
                 <i class="fas fa-envelope"></i> Get In Touch
             </a>
             <div class="flex items-center gap-3 px-6 py-3 rounded-lg border border-slate-700 glass">
-                <img src="https://github.com/[Anshulvermaorai]/[my-portfolio]/actions/workflows/main.yml/badge.svg" alt="Build Status">
+                <img src="https://github.com/Anshulvermaorai/my-portfolio/actions/workflows/main.yml/badge.svg" alt="Build Status">
             </div>
         </div>
     </header>
 
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-800">
+        <div class="grid md:grid-cols-2 gap-16 items-center text-slate-400">
+            <div>
+                <h3 class="text-blue-400 font-mono text-sm mb-6 tracking-widest uppercase">00. About_Me</h3>
+                <p class="mb-6 leading-relaxed">
+                    Hello! I'm Anshul, a **Backend Engineer** who loves turning complex business problems into elegant, automated solutions. My journey into tech is fueled by a background in the natural sciences—holding a **B.Sc. in Geology and Botany** before completing my **MCA from Kanpur University**.
+                </p>
+                <p class="mb-6 leading-relaxed">
+                    This scientific foundation instilled in me an analytical mindset that I now apply to **Enterprise System Architectures**. At **IBM**, I contributed to the **WatsonX** ecosystem, and now at **Agilent Technologies**, I architect integrations between **Polarion ALM** and **Oracle Agile PLM**.
+                </p>
+                <p class="mb-8 leading-relaxed">
+                    When I'm not optimizing Java servlets or exploring **DevOps**, I'm focused on social impact. As the founder of the NGO <span class="text-blue-400 font-bold italic">Apna Avsar (एक नया आरंभ)</span>, I work to empower unemployed youth by bridging the gap between talent and opportunity.
+                </p>
+                <div class="flex gap-4">
+                    <span class="px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-[10px] font-bold uppercase tracking-widest">Problem Solver</span>
+                    <span class="px-3 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-400 text-[10px] font-bold uppercase tracking-widest">Lifelong Learner</span>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <div class="relative bg-[#0f172a] p-2 rounded-2xl border border-slate-800 overflow-hidden">
+                    <div class="p-8 text-center glass rounded-xl">
+                        <i class="fas fa-microchip text-6xl text-blue-500 mb-6"></i>
+                        <h4 class="text-white font-bold text-xl mb-2">Systems Architect</h4>
+                        <p class="text-xs uppercase tracking-tighter text-slate-500">Bridging the gap between Code and Cloud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="max-w-6xl mx-auto px-6 pb-20">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="p-4 rounded-xl border border-slate-800 glass text-center">
+            <div class="p-4 rounded-xl border border-slate-800 glass text-center hover:border-blue-500 transition">
                 <p class="text-xs text-slate-500 mb-1 uppercase">Languages</p>
                 <p class="font-bold text-white">Java, JS</p>
             </div>
-            <div class="p-4 rounded-xl border border-slate-800 glass text-center">
+            <div class="p-4 rounded-xl border border-slate-800 glass text-center hover:border-blue-500 transition">
                 <p class="text-xs text-slate-500 mb-1 uppercase">Frameworks</p>
                 <p class="font-bold text-white">Spring Boot, Servlets</p>
             </div>
-            <div class="p-4 rounded-xl border border-slate-800 glass text-center">
+            <div class="p-4 rounded-xl border border-slate-800 glass text-center hover:border-blue-500 transition">
                 <p class="text-xs text-slate-500 mb-1 uppercase">Cloud/DevOps</p>
                 <p class="font-bold text-white">Docker, Maven, REST</p>
             </div>
-            <div class="p-4 rounded-xl border border-slate-800 glass text-center">
+            <div class="p-4 rounded-xl border border-slate-800 glass text-center hover:border-blue-500 transition">
                 <p class="text-xs text-slate-500 mb-1 uppercase">Enterprise</p>
                 <p class="font-bold text-white">Polarion, Agile PLM</p>
             </div>
@@ -122,47 +156,4 @@
             <div class="flex-1">
                 <h2 class="text-3xl font-bold text-white mb-4">Apna Avsar <span class="text-blue-500 text-lg font-normal ml-2 italic">"एक नया आरंभ"</span></h2>
                 <p class="text-slate-400 leading-relaxed mb-6">
-                    As Founder & Director, I lead an initiative to empower unemployed youth through mentorship and career guidance. We bridge the gap between education and employment for the next generation of talent.
-                </p>
-                <div class="flex gap-4">
-                    <span class="px-3 py-1 rounded bg-slate-800 text-xs font-mono uppercase">Social Impact</span>
-                    <span class="px-3 py-1 rounded bg-slate-800 text-xs font-mono uppercase">Leadership</span>
-                </div>
-            </div>
-            <div class="w-32 h-32 bg-blue-600 rounded-full flex items-center justify-center text-4xl shadow-2xl shadow-blue-500/50">
-                <i class="fas fa-seedling text-white"></i>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-800 text-center">
-    <h3 class="text-blue-400 font-mono text-sm mb-4 tracking-widest uppercase">04. Get In Touch</h3>
-    <h2 class="text-4xl font-bold text-white mb-8">Let's Build Something Together</h2>
-    <p class="text-slate-400 max-w-xl mx-auto mb-10">
-        Whether you have a question about enterprise integrations, backend architecture, or just want to say Hi, my inbox is always open.
-    </p>
-
-    <div class="flex flex-wrap justify-center gap-6">
-        <a href="mailto:officeanshulverma@gmail.com" class="flex items-center gap-3 px-6 py-3 rounded-lg border border-slate-700 glass hover:border-blue-500 transition group">
-            <i class="fas fa-envelope text-xl group-hover:text-blue-400"></i>
-            <span class="font-medium">Email Me</span>
-        </a>
-
-        <a href="https://linkedin.com/in/your-profile" target="_blank" class="flex items-center gap-3 px-6 py-3 rounded-lg border border-slate-700 glass hover:border-blue-500 transition group">
-            <i class="fab fa-linkedin text-xl group-hover:text-blue-400"></i>
-            <span class="font-medium">LinkedIn</span>
-        </a>
-
-        <a href="https://wa.me/918756301534" target="_blank" class="flex items-center gap-3 px-6 py-3 rounded-lg border border-green-500/30 glass hover:border-green-500 transition group">
-            <i class="fab fa-whatsapp text-xl text-green-500"></i>
-            <span class="font-medium text-green-500">WhatsApp</span>
-        </a>
-    </div>
-</section>
-
-    <footer class="py-10 text-center border-t border-slate-800 text-slate-500 text-sm">
-        <p>© 2026 Anshul Verma. Built with Maven & Vercel.</p>
-    </footer>
-
-</body>
-</html>
+                    As Founder & Director, I lead an initiative to empower unemployed youth through mentorship and career guidance. We bridge the gap between
